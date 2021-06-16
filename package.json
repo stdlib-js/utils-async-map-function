@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/utils-async-map-function",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Invoke a function n times and return an array of accumulated function return values.",
   "license": "Apache-2.0",
   "author": {
