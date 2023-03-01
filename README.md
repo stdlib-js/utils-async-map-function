@@ -322,7 +322,7 @@ mapFunAsync( rand, 10, done );
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/utils/map-function`][@stdlib/utils/map-function]</span><span class="delimiter">: </span><span class="description">invoke a function n times and return an array of accumulated function return values.</span>
+-   <span class="package-name">[`@stdlib/utils-map-function`][@stdlib/utils/map-function]</span><span class="delimiter">: </span><span class="description">invoke a function n times and return an array of accumulated function return values.</span>
 
 </section>
 
