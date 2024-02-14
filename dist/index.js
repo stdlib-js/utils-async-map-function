@@ -1,0 +1,11 @@
+"use strict";var c=function(r,i){return function(){return i||r((i={exports:{}}).exports,i),i.exports}};var x=c(function(W,p){
+var j=require('@stdlib/assert-is-plain-object/dist'),g=require('@stdlib/assert-has-own-property/dist'),C=require('@stdlib/assert-is-boolean/dist').isPrimitive,L=require('@stdlib/assert-is-positive-integer/dist').isPrimitive,b=require('@stdlib/error-tools-fmtprodmsg/dist');function B(r,i){return j(i)?(g(i,"thisArg")&&(r.thisArg=i.thisArg),g(i,"series")&&(r.series=i.series,!C(r.series))?new TypeError(b('1RN2o',"series",r.series)):g(i,"limit")&&(r.limit=i.limit,!L(r.limit))?new TypeError(b('1RN3P',"limit",r.limit)):null):new TypeError(b('1RN2V',i));}p.exports=B
+});var E=c(function(X,A){
+var R=require("debug"),f=R("map-function-async:limit");function z(r,i,e,n){var t,o,u,a,l,v,m;if(f("Number of invocations: %d",r),u=new Array(r),r===0)return f("Finished invoking a function."),n(null,u);for(r<i.limit?a=r:a=i.limit,f("Concurrency limit: %d",a),t=0,l=-1,v=r-1,m=0;m<a;m++)l<v&&d();function d(){var s;l+=1,s=l,f("Invocation number: %d",s),e.call(i.thisArg,s,I);function I(w,V){if(!o){if(w)return o=!0,h(w);u[s]=V,h()}}}function h(s){if(s)return f("Encountered an error: %s",s.message),n(s);if(t+=1,f("Completed invocation %d of %d.",t,r),l<v)return d();if(t===r)return f("Finished invoking a function."),n(null,u)}}A.exports=z
+});var y=c(function(Y,O){
+var F=require('@stdlib/assert-is-function/dist'),D=require('@stdlib/assert-is-nonnegative-integer/dist').isPrimitive,q=require('@stdlib/error-tools-fmtprodmsg/dist'),G=require('@stdlib/constants-float64-pinf/dist'),H=x(),J=E();function K(r,i){var e,n,t;if(e={},arguments.length>1){if(n=H(e,r),n)throw n;t=i}else t=r;if(!F(t))throw new TypeError(q('1RN3q',t));return e.series?e.limit=1:e.limit||(e.limit=G),o;function o(u,a){if(!D(u))throw new TypeError(q('1RNAk',u));if(!F(a))throw new TypeError(q('1RN3q',a));return J(u,e,t,l);function l(v,m){if(v)return a(v);a(null,m)}}}O.exports=K
+});var N=c(function(Z,T){
+var P=y();function M(r,i,e,n){if(arguments.length<4)return P(r)(i,e);P(e,r)(i,n)}T.exports=M
+});var Q=require('@stdlib/utils-define-nonenumerable-read-only-property/dist'),k=N(),S=y();Q(k,"factory",S);module.exports=k;
+/** @license Apache-2.0 */
+//# sourceMappingURL=index.js.map
