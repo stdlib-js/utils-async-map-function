@@ -54,7 +54,7 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
-mapFunAsync = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-map-function@umd/browser.js' )
+mapFunAsync = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-map-function@v0.2.1-umd/browser.js' )
 ```
 
 To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
@@ -66,7 +66,7 @@ var mapFunAsync = require( 'path/to/vendor/umd/utils-async-map-function/index.js
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-map-function@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-map-function@v0.2.1-umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -304,7 +304,7 @@ The function accepts the same `options` as `mapFunAsync()`.
 <html lang="en">
 <body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-map-function@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-map-function@v0.2.1-umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
