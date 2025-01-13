@@ -107,13 +107,13 @@ mapFunAsync( fcn, 5, done );
 
 For each iteration, the provided function is invoked with two arguments:
 
--   `index`: invocation index (starting from zero)
--   `next`: callback to be invoked upon function completion
+-   `index`: invocation index (starting from zero).
+-   `next`: callback to be invoked upon function completion.
 
 The `next` callback accepts two arguments:
 
--   `error`: error argument
--   `result`: function result
+-   `error`: error argument.
+-   `result`: function result.
 
 The function accepts the following `options`:
 
@@ -367,7 +367,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
