@@ -52,13 +52,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import mapFunAsync from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-map-function@esm/index.mjs';
+import mapFunAsync from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-map-function@v0.2.3-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-map-function@esm/index.mjs';
+import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-map-function@v0.2.3-esm/index.mjs';
 ```
 
 #### mapFunAsync( fcn, n, \[options,] done )
@@ -288,7 +288,7 @@ The function accepts the same `options` as `mapFunAsync()`.
 <script type="module">
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
-import mapFunAsync from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-map-function@esm/index.mjs';
+import mapFunAsync from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-map-function@v0.2.3-esm/index.mjs';
 
 function rand( i, next ) {
     var t = randu() * i;
